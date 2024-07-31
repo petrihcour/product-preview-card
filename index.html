@@ -34,13 +34,11 @@
             white: "#FFFFFF",
           },
           fontFamily: {
-            fraunces: ['Fraunces', 'serif'],
-            montserrat: ['Montserrat', 'sans-serif'],
+            "fraunces": ['Fraunces', 'serif'],
+            "montserrat": ['Montserrat', 'sans-serif'],
           },
-          fontWeight: {
-            "fraunces-700": 700,
-            "montserrat-500": 500,
-            "montserrat-700": 700,
+          letterSpacing: {
+            "widest": "0.3em",
           }
         }
       }
@@ -48,24 +46,54 @@
   </script>
 </head>
 
-<body>
+<body class="bg-cream h-screen flex justify-center">
+  <main class="flex justify-center flex-col items-center justify-between space-y-14 p-4">
+    <div class="flex flex-col justify-center self-center bg-white rounded-xl">
+      <img src="images/image-product-mobile.jpg" alt="Gabrielle Chanel perfume surrounded by leaves"
+        class="md:hidden rounded-t-xl" />
+      <div class="p-6">
+        <p class="font-montserrat font-medium text-slate-gray uppercase tracking-widest text-xs">Perfume</p>
 
-  Perfume
+        <h1 class="font-fraunces text-gunmetal text-3xl font-bold py-2">Gabrielle Essence Eau De Parfum</h1>
 
-  Gabrielle Essence Eau De Parfum
+        <p class="font-montserrat text-slate-gray text-sm font-medium py-1">A floral, solar and voluptuous
+          interpretation composed
+          by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL.</p>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-  Perfumer-Creator for the House of CHANEL.
+        <div class="flex flex-row space-x-5 py-4">
+          <p class="font-fraunces font-bold text-3xl text-dark-cyan">$149.99</p>
+          <p class="self-center font-montserrat text-slate-gray font-medium text-sm line-through">$169.99</p>
 
-  $149.99
-  $169.99
+        </div>
 
-  Add to Cart
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <button role="button"
+          class="bg-dark-cyan rounded-lg w-full py-3 font-montserrat text-white font-semibold text-sm flex justify-center space-x-2">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+          </span>
+          <span>
+            Add to Cart
+          </span>
+        </button>
+
+        </svg>
+
+      </div>
+    </div>
+
+    <footer class="text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+  </main>
 </body>
 
 </html>
