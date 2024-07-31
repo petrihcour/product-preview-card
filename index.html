@@ -38,7 +38,8 @@
             "montserrat": ['Montserrat', 'sans-serif'],
           },
           letterSpacing: {
-            "widest": "0.3em",
+            "wide": "0.3em",
+            "widest": "0.4em",
           }
         }
       }
@@ -47,24 +48,32 @@
 </head>
 
 <body class="bg-cream min-h-screen flex flex-col justify-between">
+
   <main class="flex-grow flex justify-center items-center p-4">
-    <div class="flex flex-col md:flex-row justify-center self-center bg-white rounded-xl">
+
+    <div class="flex flex-col md:flex-row justify-center self-center bg-white rounded-xl max-w-2xl lg:w-2/4">
+
       <img src="images/image-product-mobile.jpg" alt="Gabrielle Chanel perfume surrounded by leaves"
         class="md:hidden rounded-t-xl" />
+
       <img src="images/image-product-desktop.jpg" alt="Gabrielle Chanel perfume surrounded by leaves desktop"
-        class="hidden md:block" />
-      <div class="p-6">
-        <p class="font-montserrat font-medium text-slate-gray uppercase tracking-widest text-xs">Perfume</p>
+        class="hidden md:block md:w-1/2 rounded-l-xl" />
 
-        <h1 class="font-fraunces text-gunmetal text-3xl font-bold py-2">Gabrielle Essence Eau De Parfum</h1>
+      <div class="p-6 md:p-10 md:flex-1 md:flex md:flex-col md:justify-center">
+        <p class="font-montserrat font-medium text-slate-gray uppercase tracking-wide md:tracking-widest text-xs">
+          Perfume</p>
 
-        <p class="font-montserrat text-slate-gray text-sm font-medium py-1">A floral, solar and voluptuous
+        <h1 class="font-fraunces text-gunmetal text-3xl md:text-4xl font-bold py-2 md:py-5 pe-6">Gabrielle Essence Eau
+          De Parfum</h1>
+
+        <p class="font-montserrat text-slate-gray text-sm md:text-base font-medium py-1 md:pe-4">A floral, solar
+          and voluptuous
           interpretation composed
           by Olivier Polge, Perfumer-Creator for the House of
           CHANEL.</p>
 
-        <div class="flex flex-row space-x-5 py-4">
-          <p class="font-fraunces font-bold text-3xl text-dark-cyan">$149.99</p>
+        <div class="flex flex-row space-x-5 py-4 md:py-5 md:pb-7">
+          <p class="font-fraunces font-bold text-3xl md:text-4xl text-dark-cyan">$149.99</p>
           <p class="self-center font-montserrat text-slate-gray font-medium text-sm line-through">$169.99</p>
 
         </div>
@@ -72,23 +81,30 @@
 
         <button role="button"
           class="bg-dark-cyan rounded-lg w-full py-3 font-montserrat text-white font-semibold text-sm flex justify-center space-x-2">
+
           <span>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
               </svg>
+
           </span>
+
           <span>
             Add to Cart
           </span>
+
         </button>
 
         </svg>
 
       </div>
+
     </div>
+
   </main>
 
   <footer class="text-center px-4 text-xs">
